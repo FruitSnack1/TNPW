@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  <title></title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo.png" alt="nav-logo" class="nav-logo"></a>
+      <a href="omne.html" class="nav-item">O mně</a>
+      <a href="galerie.html" class="nav-item">Galerie</a>
+      <a href="obchod.html" class="nav-item">Obchod</a>
+      <a href="kontakt.html" class="nav-item">Kontakt</a>
+      <a href="esej.html" class="nav-item">Esej</a>
+    </div>
+  </nav>
+  <img src="images/pepek.jpeg" alt="pepek" class="body-img">
+  <div class="container">
+    <div class="sidebar">
+      <a href="images/img1.jpg" data-lightbox="img1" data-title="My caption" class="image-link">
+        <img src="images/img1.jpg" alt="img1" class="lightbox-img">
+      </a>
+      <a href="images/img2.jpg" data-lightbox="img2" data-title="My caption" class="image-link">
+        <img src="images/img2.jpg" alt="img2" class="lightbox-img">
+      </a>
+      <a href="images/img3.jpg" data-lightbox="img3" data-title="My caption" class="image-link">
+        <img src="images/img3.jpg" alt="img3" class="lightbox-img">
+      </a>
+    </div>
+    <article class="w-80">
+      <h3>Kontakt</h3>
+      <ul>
+        <li>Jméno : Pepek Dřevo</li>
+        <li>Tefon : 983 498 372</li>
+        <li>Email : pepek.drevo@gmail.com</li>
+        <li>Adresa : Dřevěná 546, Hradec Králové</li>
+      </ul>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDqq2n5VK0-o2E9mw1pggDcxmcRa9rdSik'></script><div style='overflow:hidden;height:400px;width:calc(100% - 100px);margin:10px 50px 30px;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://stempelundbasteln.de/'>*colop stempel*</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=c20cbd1caed3c5fa7c0eebb4a6d0519358fc4746'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(50.2042764,15.829358700000057),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.2042764,15.829358700000057)});infowindow = new google.maps.InfoWindow({content:'<strong>Truhlářství Pepek</strong><br>Hradecká 1249/6<br> Hradec Králové<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </article>
+  </div>
+  <footer>
+    <span class="footer-text">© 1994 - 2018 Truhlářství Pepek a.s. (Studentský zápočtový projekt UHK)</span>
+    <img src="images/uhk.png" alt="uhk" class="footer-img">
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/main.js"></script>
+
+</html>

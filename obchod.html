@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  <title></title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo.png" alt="nav-logo" class="nav-logo"></a>
+      <a href="omne.html" class="nav-item">O mně</a>
+      <a href="galerie.html" class="nav-item">Galerie</a>
+      <a href="obchod.html" class="nav-item">Obchod</a>
+      <a href="kontakt.html" class="nav-item">Kontakt</a>
+      <a href="esej.html" class="nav-item">Esej</a>
+    </div>
+  </nav>
+  <img src="images/pepek.jpeg" alt="pepek" class="body-img">
+  <div class="container">
+    <div class="sidebar">
+      <a href="images/img1.jpg" data-lightbox="img1" data-title="My caption" class="image-link">
+        <img src="images/img1.jpg" alt="img1" class="lightbox-img">
+      </a>
+      <a href="images/img2.jpg" data-lightbox="img2" data-title="My caption" class="image-link">
+        <img src="images/img2.jpg" alt="img2" class="lightbox-img">
+      </a>
+      <a href="images/img3.jpg" data-lightbox="img3" data-title="My caption" class="image-link">
+        <img src="images/img3.jpg" alt="img3" class="lightbox-img">
+      </a>
+    </div>
+    <article class="w-80">
+      <h3>Zde si můžete vyvtořit objednávku na míru.</h3>
+      <label for="email"><strong>Email :</strong></label>
+      <input type="text" name="email" value="" placeholder="email@gmail.com">
+      <label for="objednavka"><strong>Objednávka :</strong></label>
+      <textarea name="objednavka" rows="8" cols="80" placeholder="Vaše objednávka ..."></textarea>
+      <button type="button" name="button">Odeslat</button>
+    </article>
+  </div>
+  <footer>
+    <span class="footer-text">© 1994 - 2018 Truhlářství Pepek a.s. (Studentský zápočtový projekt UHK)</span>
+    <img src="images/uhk.png" alt="uhk" class="footer-img">
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/main.js"></script>
+
+</html>
