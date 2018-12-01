@@ -1,0 +1,264 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* TELO STRANKY */
+body{
+  background: url("../images/background.jpg") ;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+
+/* NAVIGACE */
+nav{
+  width: 100%;
+  background-color: white;
+}
+.nav-logo{
+  padding: 10px 0;
+  height: 140px;
+}
+.nav-item{
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin: auto;
+}
+.nav-item:hover{
+  color: #f47f41;
+}
+.nav-container{
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* PRVKY LAYOUTU */
+.sidebar{
+  height: 100%;
+  /* width: calc(20% - 10px); */
+  background-color: white;
+  box-shadow: 0 15px  40px rgba(0,0,0,0.13);
+  margin:  5px;
+  padding: 5px 0;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 0 1 calc(20% - 10px);
+}
+article{
+  /* width: calc(40% - 10px); */
+  margin : 5px;
+  background-color: white;
+  box-shadow: 0 15px  40px rgba(0,0,0,0.13);
+  height: inherit;
+  flex: 0 1 calc(40% - 10px);
+}
+article.w-80{
+  flex: 0 1 calc(80% - 10px);
+}
+article.w-100{
+  flex: 0 1 calc(100% - 10px);
+}
+.body-img{
+  width: 100%;
+}
+.container{
+  display: flex;
+  margin: 80px 8% 0;
+  padding: 5px 5px 0 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* FOOTER */
+footer{
+  height: 100px;
+  background-color: rgb(71,71,71);
+  margin-top: 5px;
+  color: white;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-text{
+}
+.footer-img{
+  height: 30px;
+  width: auto;
+}
+footer div.container{
+  margin: 0 8%;
+}
+.container-footer{
+  display: flex;
+  margin:0 10% ;
+  padding: 5px 5px 0 5px;
+  flex-wrap: wrap;
+}
+
+
+/* HEADER */
+header{
+  width: 100%;
+  height: 160px;
+  background-color: white;
+  margin: 5px 5px;
+  box-shadow: 0 15px  40px rgba(0,0,0,0.13);
+  display: flex;
+  justify-content: space-around;
+}
+.header-img{
+  height: 4vw;
+  margin: auto;
+  filter: opacity(0.6);
+}
+.header-text{
+  margin: auto;
+  font-size: 18px;
+}
+
+/* O MNE */
+.about{
+  margin: 0 30px;
+  margin-left: 250px;
+}
+.about li{
+  margin: 20px 0;
+}
+.portret{
+  height: 300px;
+  float: left;
+  margin-left: 30px;
+}
+
+
+/* GALERIE */
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery a{
+  flex: 0 1 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.gallery-img{
+  width: 40vw;
+  margin: auto;
+}
+.lightbox-img{
+  z-index: 5;
+  width: calc(100% - 10px);
+  height: auto;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* OBCHOD */
+label{
+  margin-left: 50px;
+}
+input{
+  display: block;
+  margin: 10px 50px;
+  width: calc(100% - 100px);
+  height: 25px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+}
+textarea{
+  margin: 10px 50px;
+  width: calc(100% - 100px);
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+}
+button{
+  margin: 10px 50px;
+}
+
+
+
+/* OSTATNI */
+h3, h5{
+  margin: 40px;
+}
+.text{
+  margin: 0 50px 30px;
+}
+#gmap_canvas{
+  width: 100%;
+  height: 100%;
+}
+iframe{
+  width: calc(100% - 10px);
+  margin: 5px;
+}
+
+
+/* RESPONZIVITA */
+/*phone*/
+@media only screen and (max-width: 600px) {
+ .sidebar{
+    display: none;
+  }
+  article{
+    flex: 0 1 calc(100% - 10px);
+  }
+  .container{
+    margin: 0;
+  }
+  .nav-logo{
+    display: none;
+  }
+  .nav-container{
+    flex-direction: column;
+    height: 276px;
+  }
+  nav{
+    position: relative;
+    height: 276px;
+  }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ .sidebar{
+    display: none;
+  }
+  article{
+    width: calc(50% - 10px);
+    flex: 0 1 calc(50% - 10px);
+  }
+  article.w-80{
+    width: calc(100% - 10px);
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container{
+    margin: 0 8%;
+  }
+  article{
+    width: calc(40% - 10px);
+    flex: 0 1 calc(40% - 10px);
+  }
+  .sidebar{
+    display: flex;
+  }
+  .nav-item{
+    font-size: 32px;
+  }
+}
